@@ -10,7 +10,7 @@ export default function LoginPage() {
       {/* Nike Logo */}
       <div className="mb-12">
         <Image
-          src= {require("../../../public/nphoto/nike.png")}
+          src="/nphoto/nike.png"
           alt="Nike Logo"
           width={60}
           height={60}

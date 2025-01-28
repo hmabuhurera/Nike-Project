@@ -8,8 +8,10 @@ const Feature = () => {
           <h2 className="lg:font-bold lg:text-6xl  mb-4 text-2xl font-bold">Featured</h2>
           <div className="w-[1344] h-[700] flex-1 bg-white text-black  flex flex-col items-center">
             <Image
-              src= {require("../../../public/nphoto/feature.png")} // Replace with your actual image path
+              src="/nphoto/feature.png" // Replace with your actual image path
               alt="Jordan Close-up"
+              width={1300}
+              height={600}
               
               className=""
             />

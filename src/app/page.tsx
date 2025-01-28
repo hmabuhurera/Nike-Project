@@ -9,9 +9,9 @@ import GearUp from './component/gearUp'
 import Essentials from './component/essintail'
 import FooterNav2 from './component/Footer2'
 import ProductDetail from './productDetail/page'
-// import { ShoppingBag } from 'lucide-react'
-import ShoppingCart from './component/shopingCart'
+import { ShoppingBag } from 'lucide-react'
 import CheckoutForm from './component/checkOutPage'
+import ShoppingCart from './shopingCart/page'
 
 
 
@@ -31,8 +31,8 @@ const Home = () => {
       <Essentials />
       <FooterNav2 />
       
-      {/* <ShoppingCart /> */}
-      {/* <CheckoutForm /> */}
+      <ShoppingCart />
+      <CheckoutForm />
 
     </main>
     

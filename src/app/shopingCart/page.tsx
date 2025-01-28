@@ -1,222 +1,9 @@
-// 'use client'
-
-// import Image from "next/image"
-// import { Heart, Trash2 } from 'lucide-react'
-// import { Button } from "@/components/ui/button"
-// import { Card } from "@/components/ui/card"
-// import {
-//   Select,
-//   SelectContent,
-//   SelectItem,
-//   SelectTrigger,
-//   SelectValue,
-// } from "@/components/ui/select"
-
-// export default function ShoppingCart() {
-//   return (
-//     <div className="container mx-auto px-4 py-8">
-//       {/* Free Delivery Banner */}
-//       <div className="mb-8 flex items-center justify-between border-b pb-4">
-//         <div className="space-y-1">
-//           <p className="text-sm">Free Delivery</p>
-//           <p className="text-xs text-muted-foreground">
-//             Applies to orders of ₹ 14,995.00 or more.{" "}
-//             <span className="underline">View details</span>
-//           </p>
-//         </div>
-//       </div>
-
-//       <div className="grid gap-8 lg:grid-cols-3">
-//         <div className="lg:col-span-2">
-//           {/* Bag Section */}
-//           <div className="space-y-6">
-//             <h2 className="text-2xl font-semibold">Bag</h2>
-            
-//             {/* Cart Items */}
-//             <div className="space-y-4">
-//               {/* Item 1 */}
-//               <Card className="p-4">
-//                 <div className="flex gap-4">
-//                   <div className="h-24 w-24 flex-shrink-0">
-//                     <Image
-//                       src="/placeholder.svg"
-//                       alt="Nike Dri-FIT"
-//                       width={96}
-//                       height={96}
-//                       className="h-full w-full object-cover"
-//                     />
-//                   </div>
-//                   <div className="flex flex-1 flex-col">
-//                     <div className="flex justify-between">
-//                       <div>
-//                         <h3 className="font-medium">Nike Dri-FIT Any Tech(m) Ultra</h3>
-//                         <p className="text-sm text-muted-foreground">Men's Sport Shoes Running Top</p>
-//                         <p className="text-sm text-muted-foreground">Ashen Slate/Cool Blue</p>
-//                       </div>
-//                       <p className="font-medium">₹ 895.00</p>
-//                     </div>
-//                     <div className="mt-4 flex items-center justify-between">
-//                       <div className="flex gap-4">
-//                         <Select defaultValue="l">
-//                           <SelectTrigger className="w-24">
-//                             <SelectValue placeholder="Size" />
-//                           </SelectTrigger>
-//                           <SelectContent>
-//                             <SelectItem value="s">S</SelectItem>
-//                             <SelectItem value="m">M</SelectItem>
-//                             <SelectItem value="l">L</SelectItem>
-//                             <SelectItem value="xl">XL</SelectItem>
-//                           </SelectContent>
-//                         </Select>
-//                         <Select defaultValue="1">
-//                           <SelectTrigger className="w-24">
-//                             <SelectValue placeholder="Quantity" />
-//                           </SelectTrigger>
-//                           <SelectContent>
-//                             <SelectItem value="1">1</SelectItem>
-//                             <SelectItem value="2">2</SelectItem>
-//                             <SelectItem value="3">3</SelectItem>
-//                           </SelectContent>
-//                         </Select>
-//                       </div>
-//                       <div className="flex gap-2">
-//                         <Button variant="ghost" size="icon">
-//                           <Heart className="h-5 w-5" />
-//                         </Button>
-//                         <Button variant="ghost" size="icon">
-//                           <Trash2 className="h-5 w-5" />
-//                         </Button>
-//                       </div>
-//                     </div>
-//                   </div>
-//                 </div>
-//               </Card>
-
-//               {/* Item 2 */}
-//               <Card className="p-4">
-//                 <div className="flex gap-4">
-//                   <div className="h-24 w-24 flex-shrink-0">
-//                     <Image
-//                       src="/placeholder.svg"
-//                       alt="Nike Air Max"
-//                       width={96}
-//                       height={96}
-//                       className="h-full w-full object-cover"
-//                     />
-//                   </div>
-//                   <div className="flex flex-1 flex-col">
-//                     <div className="flex justify-between">
-//                       <div>
-//                         <h3 className="font-medium">Nike Air Max 97 SE</h3>
-//                         <p className="text-sm text-muted-foreground">Men's Shoes</p>
-//                         <p className="text-sm text-muted-foreground">Fast Flexin/Light Iron/White</p>
-//                       </div>
-//                       <p className="font-medium">₹ 995.00</p>
-//                     </div>
-//                     <div className="mt-4 flex items-center justify-between">
-//                       <div className="flex gap-4">
-//                         <Select defaultValue="9">
-//                           <SelectTrigger className="w-24">
-//                             <SelectValue placeholder="Size" />
-//                           </SelectTrigger>
-//                           <SelectContent>
-//                             <SelectItem value="8">UK 8</SelectItem>
-//                             <SelectItem value="9">UK 9</SelectItem>
-//                             <SelectItem value="10">UK 10</SelectItem>
-//                           </SelectContent>
-//                         </Select>
-//                         <Select defaultValue="1">
-//                           <SelectTrigger className="w-24">
-//                             <SelectValue placeholder="Quantity" />
-//                           </SelectTrigger>
-//                           <SelectContent>
-//                             <SelectItem value="1">1</SelectItem>
-//                             <SelectItem value="2">2</SelectItem>
-//                             <SelectItem value="3">3</SelectItem>
-//                           </SelectContent>
-//                         </Select>
-//                       </div>
-//                       <div className="flex gap-2">
-//                         <Button variant="ghost" size="icon">
-//                           <Heart className="h-5 w-5" />
-//                         </Button>
-//                         <Button variant="ghost" size="icon">
-//                           <Trash2 className="h-5 w-5" />
-//                         </Button>
-//                       </div>
-//                     </div>
-//                   </div>
-//                 </div>
-//               </Card>
-//             </div>
-//           </div>
-
-//           {/* Favourites Section */}
-//           <div className="mt-8 space-y-4">
-//             <h2 className="text-2xl font-semibold">Favourites</h2>
-//             <p className="text-sm text-muted-foreground">
-//               There are no items saved to your favourites.
-//             </p>
-//           </div>
-
-//           {/* You Might Also Like Section */}
-//           <div className="mt-8 space-y-4">
-//             <h2 className="text-2xl font-semibold">You Might Also Like</h2>
-//             <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4">
-//               <Card className="p-4">
-//                 <Image
-//                   src="/placeholder.svg"
-//                   alt="Air Jordan 1 Mid SE Craft"
-//                   width={200}
-//                   height={200}
-//                   className="mb-4 w-full"
-//                 />
-//                 <h3 className="font-medium">Air Jordan 1 Mid SE Craft</h3>
-//                 <p className="text-sm text-muted-foreground">Men's Shoes</p>
-//                 <p className="mt-2 font-medium">₹ 12,295.00</p>
-//               </Card>
-//             </div>
-//           </div>
-//         </div>
-
-//         {/* Summary Section */}
-//         <div className="lg:sticky lg:top-4 lg:h-fit">
-//           <Card className="p-6">
-//             <h2 className="text-2xl font-semibold">Summary</h2>
-//             <div className="mt-4 space-y-4">
-//               <div className="flex justify-between">
-//                 <span>Subtotal</span>
-//                 <span>₹ 28,890.00</span>
-//               </div>
-//               <div className="flex justify-between">
-//                 <span>Estimated Delivery & Handling</span>
-//                 <span>Free</span>
-//               </div>
-//               <div className="border-t pt-4">
-//                 <div className="flex justify-between font-medium">
-//                   <span>Total</span>
-//                   <span>₹ 28,890.00</span>
-//                 </div>
-//               </div>
-//               <Button className="w-full" size="lg">
-//                 Member Checkout
-//               </Button>
-//             </div>
-//           </Card>
-//         </div>
-//       </div>
-//     </div>
-//   )
-// }
-
-
-
 'use client'
 
 import Image from "next/image"
 import { Heart, Trash2 } from 'lucide-react'
 import { Button } from "@/components/ui/button"
-import { Card } from "@/components/ui/card"
+
 import {
   Select,
   SelectContent,
@@ -257,7 +44,7 @@ export default function ShoppingCart() {
                   <div className="flex gap-4">
                     <div className="h-24 w-24 flex-shrink-0 bg-[#F8F8F8] rounded">
                       <Image
-                        src= {require("../../../public/nphoto/gear1.png")}
+                        src="/public/nphoto/gear1.png"
                         alt="Nike Dri-FIT TecKnit Ultra"
                         width={96}
                         height={96}
@@ -324,7 +111,7 @@ export default function ShoppingCart() {
                   <div className="flex gap-4">
                     <div className="h-24 w-24 flex-shrink-0 bg-[#F8F8F8] rounded">
                       <Image
-                        src= {require("../../../public/nphoto/shoes2.png")}
+                        src="/public/nphoto/shoes2.png"
                         alt="Nike Air Max"
                         width={96}
                         height={96}
@@ -401,7 +188,7 @@ export default function ShoppingCart() {
                 <div className="space-y-2">
                   <div className="aspect-square bg-[#F8F8F8] rounded">
                     <Image
-                      src= {require("../../../public/nphoto/shoes3.png")}
+                      src="/public/nphoto/shoes3.png"
                       alt="Air Jordan 1 Mid SE Craft"
                       width={200}
                       height={200}

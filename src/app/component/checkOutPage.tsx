@@ -72,7 +72,7 @@ export default function CheckoutForm() {
               <h1 className="text-2xl font-medium mb-4">How would you like to get your order?</h1>
               <div className="bg-[#F8F8F8] p-4 rounded text-sm">
                 <p>
-                  Customs regulation for India require a copy of the recipient's KYC. The address on the KYC needs to match the shipping address. Our courier will contact you via SMS/email to obtain a copy of your KYC. The KYC will be stored securely and used solely for the purpose of clearing customs (including sharing it with customs officials) for all orders and returns. If your KYC does not match your shipping address, please click the link for more information.{" "}
+                  Customs regulation for India require a copy of the recipient's KYC. The address on the KYC needs to match the shipping address. Our courier will contact you via SMS/email to obtain a copy of your KYC. The KYC will be stored securely and used solely for the purpose of clearing customs (including sharing it with customs officials) for all orders and returns. If your KYC does not match your shipping address, please click the link for more information.
                   <button className="underline hover:text-black transition-colors">
                     Learn More
                   </button>
@@ -361,7 +361,7 @@ export default function CheckoutForm() {
                   <div className="flex gap-4">
                     <div className="h-24 w-24 bg-[#F8F8F8] rounded flex-shrink-0">
                       <Image
-                        src= {require("../../../public/nphoto/gear1.png")}
+                        src="/nphoto/gear1.png"
                         alt="Nike Dri-FIT"
                         width={96}
                         height={96}
@@ -379,7 +379,7 @@ export default function CheckoutForm() {
                   <div className="flex gap-4">
                     <div className="h-24 w-24 bg-[#F8F8F8] rounded flex-shrink-0">
                       <Image
-                        src={require("../../../public/nphoto/shoes3.png")}
+                        src="/nphoto/shoes3.png"
                         alt="Nike Air Max"
                         width={96}
                         height={96}

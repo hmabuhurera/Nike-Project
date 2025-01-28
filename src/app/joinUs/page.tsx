@@ -21,7 +21,7 @@ export default function SignupPage() {
         {/* Logo */}
         <div className="flex justify-center">
           <Image
-            src= {require("../../../public/nphoto/nike.png")}
+            src="/nphoto/nike.png"
             alt="Nike"
             width={74}
             height={26}

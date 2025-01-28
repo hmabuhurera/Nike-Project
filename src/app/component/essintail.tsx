@@ -8,19 +8,19 @@ const categories = [
   {
     id: 1,
     name: "Men's",
-    Image: require("../../../public/nphoto/EssinalMan.png"),
+    Image: "/nphoto/EssinalMan.png",
     href: "/mens"
   },
   {
     id: 2,
     name: "Women's",
-    Image: require("../../../public/nphoto/EssintalWomen.png"),
+    Image: "/nphoto/EssintalWomen.png",
     href: "/womens"
   },
   {
     id: 3,
     name: "Kids'",
-    Image: require("../../../public/nphoto/EssintalKid.png"),
+    Image: "/nphoto/EssintalKid.png",
     href: "/kids"
   }
 ]
